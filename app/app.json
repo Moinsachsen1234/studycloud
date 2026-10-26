@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "StudyCloud",
+    "slug": "studycloud",
+    "scheme": "studycloud",
+    "version": "0.1.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "StudyCloud liest Fotos aus, die du als Lernmaterial hochladen möchtest.",
+        "NSCameraUsageDescription": "StudyCloud nutzt die Kamera, um Arbeitsblätter zu fotografieren."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F3EFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-localization",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "StudyCloud liest Fotos aus, die du als Lernmaterial hochladen möchtest.",
+          "cameraPermission": "StudyCloud nutzt die Kamera, um Arbeitsblätter zu fotografieren."
+        }
+      ]
+    ]
+  }
+}

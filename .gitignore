@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.expo/
+.env
+.env.*
+!.env.example
+*.log
+server/data/
+server/.smoke-data/
+server/.e2e-data/
+.DS_Store
+.claude/
